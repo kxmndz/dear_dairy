@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:speech_to_text_ultra/speech_to_text_ultra.dart';
 
+import 'DairyDrawerStateful.dart';
 import 'Entry.dart';
-import 'common_drawer.dart' show makeDrawer;
 
 class DairyNewEntryPage extends StatefulWidget {
   const DairyNewEntryPage({super.key});
@@ -58,7 +58,8 @@ class _DairyNewEntryPageState extends State<DairyNewEntryPage> {
         ModalRoute.of(context)!.settings.arguments as AppContext;
     return Scaffold(
       appBar: bar,
-      drawer: makeDrawer(context),
+      drawer: DairyDrawer(app_ctx: app_ctx),
+
       floatingActionButton: FloatingActionButton(
         child: SpeechToTextUltra(
           ultraCallback: (String liveText, String finalText, bool isListening) {

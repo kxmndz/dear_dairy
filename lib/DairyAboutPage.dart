@@ -2,7 +2,7 @@ import 'package:dear_dairy/AppContext.dart';
 import 'package:dear_dairy/common_appbar.dart' show bar;
 import 'package:flutter/material.dart';
 
-import 'common_drawer.dart' show makeDrawer;
+import 'DairyDrawerStateful.dart';
 
 class DairyAboutPage extends StatefulWidget {
   const DairyAboutPage({super.key});
@@ -45,7 +45,7 @@ class _DairyAboutPageState extends State<DairyAboutPage> {
         ModalRoute.of(context)!.settings.arguments as AppContext;
     return Scaffold(
       appBar: bar,
-      drawer: makeDrawer(context),
+      drawer: DairyDrawer(app_ctx: app_ctx),
       body: Center(
         child: ListView(
           padding: const EdgeInsets.all(16.0),

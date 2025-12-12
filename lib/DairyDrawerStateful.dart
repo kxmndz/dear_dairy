@@ -33,7 +33,7 @@ class DairyDrawer extends StatelessWidget {
           ListTile(
               title: const Text('View Entries'),
               onTap: () {
-                Navigator.of(context).pop(); // Close the drawer
+                Navigator.of(context).pop();
                 Navigator.of(context).pushNamed('/entries', arguments: app_ctx);
               }
           ),

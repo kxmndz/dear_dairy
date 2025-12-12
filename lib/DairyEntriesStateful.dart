@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dear_dairy/AppContext.dart';
 
-import 'common_drawer.dart' show makeDrawer;
+import 'DairyDrawerStateful.dart';
 
 class DairyEntriesPage extends StatefulWidget {
   const DairyEntriesPage({super.key});
@@ -61,7 +61,7 @@ class _DairyEntriesPageState extends State<DairyEntriesPage> {
           return Scaffold(
             // default bar
             // appBar: bar,
-            drawer: makeDrawer(context),
+            drawer: DairyDrawer(app_ctx: ctx),
             appBar: AppBar(title: Text('${ctx.username}\'s Entries')),
             body: Center(
               child: ListView(
