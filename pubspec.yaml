@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.20.2
-  provider: ^6.1.5+1
+  path_provider: ^2.1.5
   speech_to_text: ^6.6.2
   speech_to_text_ultra: ^0.0.3
   universal_html: ^2.3.0

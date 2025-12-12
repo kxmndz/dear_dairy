@@ -42,12 +42,7 @@ class DairyDrawer extends StatelessWidget {
 
           ListTile(
             title: const Text('About'),
-            onTap: () => Navigator.of(context).pushNamed('/about'),
-          ),
-
-          ListTile(
-            title: const Text('Help'),
-            onTap: () => Navigator.of(context).pushNamed('/help'),
+            onTap: () => Navigator.of(context).pushNamed('/about', arguments: app_ctx),
           ),
 
           const Divider(),

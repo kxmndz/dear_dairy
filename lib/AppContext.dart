@@ -36,6 +36,11 @@ class AppContext {
     _writeEntriesToFile(username, entries);
   }
 
+  void clearEntries() {
+    entries = [];
+    _writeEntriesToFile(username, entries);
+  }
+
   List<DairyEntryCard> buildCards() {
     return entries.map((e) {
       return DairyEntryCard(entry: e, onDelete: deleteEntry);

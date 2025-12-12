@@ -32,7 +32,7 @@ class _DairyNewEntryPageState extends State<DairyNewEntryPage> {
 
   void _handleDream(BuildContext context, AppContext app_ctx) {
 
-    recordedDreamText += mLiveResponse;
+    recordedDreamText = '${_dreamController.text}  \n$mLiveResponse';
 
 
     app_ctx.push(Entry(text: recordedDreamText, timestamp: DateTime.now()));

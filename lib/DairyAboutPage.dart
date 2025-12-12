@@ -28,7 +28,7 @@ void _deleteAllEntries(BuildContext context, AppContext app_ctx) {
             onPressed: () {
               // Close the dialog
               Navigator.of(context).pop();
-              app_ctx.entries = [];
+              app_ctx.clearEntries();
             },
           ),
         ],
