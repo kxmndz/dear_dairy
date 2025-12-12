@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dear_dairy/AppContext.dart';
 
-import 'common_appbar.dart' show bar;
 import 'common_drawer.dart' show makeDrawer;
 
 class DairyEntriesPage extends StatefulWidget {

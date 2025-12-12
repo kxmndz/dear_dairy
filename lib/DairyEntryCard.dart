@@ -50,7 +50,7 @@ class _DairyEntryCardState extends State<DairyEntryCard> {
 
     // Text to display when collapsed (up to 200 characters)
     final String collapsedText = requiresExpansion
-        ? fullText.substring(0, 200) + '...'
+        ? '${fullText.substring(0, 200)}...'
         : fullText;
 
     return Card(

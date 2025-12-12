@@ -1,10 +1,7 @@
 import 'package:dear_dairy/AppContext.dart';
 import 'package:dear_dairy/common_appbar.dart' show bar;
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:speech_to_text_ultra/speech_to_text_ultra.dart';
 
-import 'Entry.dart';
 import 'common_drawer.dart' show makeDrawer;
 
 class DairyAboutPage extends StatefulWidget {
